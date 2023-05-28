@@ -29,6 +29,7 @@ namespace SocialProject.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
             services.AddSignalR();
             services.AddScoped<IPostRepository,PostRepository>();
             services.AddScoped<IFriendshipRepository,FriendshipRepository>();
